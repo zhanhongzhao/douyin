@@ -31,3 +31,128 @@ html,body{
   height: 100%;
   color: #fff;
 }
+.page-header{
+  height: 120px;
+    line-height: 120px;
+    overflow: hidden;
+}
+.header-left{
+  margin-left: 80px;
+    float: left;
+    height: 100%;
+}
+.header-left a{
+  height: 100%;
+  align-items: center;
+  display: flex;
+}
+.header-right{
+  float: right;
+    margin-right: 150px;
+}
+.header-links{
+  list-style: none;
+}
+.header-links-item{
+  display: inline-block;
+    vertical-align: middle;  /*设置元素垂直对齐方式*/
+    margin-left: 25px;
+}
+.header-links-item a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.page-mainer{
+  width: 500px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);  /*旋转div元素*/
+    margin-top: 50px;
+    right: 150px;
+}
+.slogan{
+  float: right;
+    width: 450px;
+    margin-bottom: 50px;
+}
+.btn-list{
+  float: right;
+    letter-spacing: -4px;
+    font-size: 0;
+}
+.btn-primary{
+  display: inline-block;
+    background: #fff;
+    border-radius: 5px;
+    margin-left: 10px;
+    width: 130px;
+    height: 50px;
+    transition: .15s opacity;  /*悬浮效果*/
+    transition-delay: .15s;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 1px 1px 7px 2px rgba(0,0,0,.54);    /*边框添加阴影*/
+}
+.icon-QRcode{
+  float: right;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-image: url('../images/qr.png');
+}
+.icon-QRcode img{
+  width: 223px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: scale(0.23);
+    transform-origin: top right;
+    opacity: 0;
+    transition: .3s all;
+}
+.icon-QRcode:hover img{
+  -webkit-transform:scale(1);
+  transform:scale(1);
+  opacity:1
+}
+ 
+.icon-ios{
+  width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 5px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../images/appstore.png');
+}
+.icon-andorid{
+  width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 5px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../images/android.png');
+}
+
+.page-footer{
+  font-size: 14px;
+    width: 100%;
+    background: transparent; 
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+}
+.nav-warpper{
+  color: #fff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,.7);
+    margin-bottom: 16px;
+}
+.nav-warpper a{
+  text-decoration: none;
+  color: #fff;
+}
